@@ -14,5 +14,7 @@ the agenda can grow with the discussion.
 
 Papers, notes, and expositions can go in [writeups/](writeups/).
 
+Before inviting agent contributions, tailor [auto-research.md](auto-research.md) to your questions, research tracks and evidence requirements; individual attempts belong in [auto-research/](auto-research/).
+
 See the [contribution guide](https://public-observatory.github.io/docs.html)
 for the shared workflow and setup instructions.
