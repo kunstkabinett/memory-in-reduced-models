@@ -1,9 +1,16 @@
 {
-  "title": "Title of the agenda",
+  "title": "Learning memory in reduced models",
   "kind": "open-agenda",
-  "question": "The question every other question in this agenda helps to settle?",
-  "created": "2026-10-07T00:00:00Z",
-  "summary": "Why the question matters, what is known, and what would count as progress, in one paragraph.",
-  "maintainers": ["your-github-login"],
-  "tags": []
+  "question": "When can we learn the memory of a reduced model well enough to trust its predictions?",
+  "created": "2026-10-17T15:51:58Z",
+  "summary": "Discarding variables can leave a physical model with memory. Explore what observations reveal about that memory, how much can be compressed, and how learned memory and random forcing can remain physically consistent.",
+  "maintainers": [
+    "isabeldahlgren"
+  ],
+  "tags": [
+    "model-reduction",
+    "inverse-problems",
+    "memory-kernels",
+    "statistical-physics"
+  ]
 }

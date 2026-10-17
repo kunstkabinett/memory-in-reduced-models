@@ -2,17 +2,17 @@
 
 Contribute one useful, independently reviewable result toward the question in [agenda.json](agenda.json). Start with the [README](README.md), the repository's question and claim issues, and any local contributor instructions.
 
-## Maintainer setup
+## Scope and starting points
 
-Before inviting research runs, replace this section and the suggested tracks below with the agenda's concrete priorities, links to question issues, starting references and standards of evidence. State any resource limits or required checks. Keep the guide current as questions are answered. The placeholder agenda does not define an actionable research task: agents should report that setup is needed and stop until a maintainer supplies one.
+Use the [question issues](https://github.com/public-observatory/memory-in-reduced-models/issues?q=is%3Aissue+label%3Aquestion) and [reading notes](writeups/reading-notes.md). The questions are deliberately exploratory. Choose and state a narrow subproblem before doing research, and check whether the literature already answers it.
 
 ## Suggested research tracks
 
-- `benchmarks`: reproduce a precise known case or build a small exact example that checks the model and gives later work a reference.
-- `mechanisms`: investigate one proposed construction, proof step or explanation that could advance an open question.
-- `obstructions`: test a precise conjecture, audit an assumption or establish why a specified approach cannot work.
+- `observations` ([question #1](https://github.com/public-observatory/memory-in-reduced-models/issues/1)): investigate what limited data reveal about a known scalar kernel. A reproducible ambiguity or recovery example is useful progress.
+- `compression` ([question #2](https://github.com/public-observatory/memory-in-reduced-models/issues/2)): explore how forgetting or compressing memory changes one chosen observable. Compare with an uncompressed baseline and check existing perturbation results.
+- `consistency` ([question #3](https://github.com/public-observatory/memory-in-reduced-models/issues/3)): investigate memory and noise together in a simple thermal model. An explicit construction, obstruction, or careful account of existing guarantees is useful progress.
 
-For each track, name the question it serves and what would count as progress. These are starting suggestions; use categories suited to the actual research.
+Use the operator's resource budget; this agenda authorizes no unattended compute. State assumptions and distinguish reproduction, new evidence, and conjecture. A failed approach should record what it actually rules out.
 
 ## Choose one bounded task
 
@@ -26,6 +26,6 @@ Follow the agenda's scope: in a closed agenda, work on the maintainers' question
 
 Store the attempt under `auto-research/<track>/<YYYY-MM-DD>-<handle>-<slug>/`, following [the folder guide](auto-research/README.md). Record failed approaches with their exact scope so the next contributor can avoid repeating them. Include an executable check when the result is computational, or a complete argument with its assumptions when it is mathematical. State what you actually checked and what remains conditional.
 
-Submit one focused pull request for the artifacts and record the finding through the repository's **Claim** issue form. In **Answers**, name the question issues addressed; in **Evidence**, link the pull request and result; in **Provenance**, credit prior work and disclose the agent, model and tools used, with cost or compute usage when available. Link the claim from the attempt's README. If submission access is unavailable, leave a patch and draft claim locally and report that they were not submitted.
+When the operator authorizes submission, submit one focused pull request and record the finding through the repository's **Claim** issue form. Otherwise leave the artifacts and draft claim locally. In **Answers**, name the question issues addressed; in **Evidence**, link the pull request and result; in **Provenance**, credit prior work and disclose the agent, model and tools used, with cost or compute usage when available. Link the claim from the attempt's README. If submission access is unavailable, leave a patch and draft claim locally and report that they were not submitted.
 
 A completed run is not a verified result. Leave question closure and acceptance to maintainers, and do not mark your own claim independently reproduced. Follow the [shared contribution guide](https://public-observatory.github.io/docs.html).
