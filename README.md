@@ -2,8 +2,6 @@
 
 A model of a molecule need not track every surrounding atom. But the variables it leaves out can continue to influence its motion. This influence can appear as memory: the future depends on more than the present state. Learning that memory could make small models more faithful to the physical systems they describe.[^sanderse-2024]
 
-**When can we learn the memory of a reduced model well enough to trust its predictions?**
-
 In a simple generalized Langevin model, a retained velocity $v(t)$ obeys
 
 $$

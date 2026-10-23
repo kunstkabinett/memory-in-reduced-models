@@ -3,7 +3,6 @@
   "kind": "open-agenda",
   "question": "When can we learn the memory of a reduced model well enough to trust its predictions?",
   "created": "2026-10-17T15:51:58Z",
-  "summary": "Discarding variables can leave a physical model with memory. Explore what observations reveal about that memory, how much can be compressed, and how learned memory and random forcing can remain physically consistent.",
   "maintainers": [
     "isabeldahlgren"
   ],
@@ -12,5 +11,9 @@
     "inverse-problems",
     "memory-kernels",
     "statistical-physics"
-  ]
+  ],
+  "image": {
+    "path": "images/agenda.jpg",
+    "alt": "A single large particle moving through a sea of small molecular particles, its curved wake lingering in layered translucent ribbons."
+  }
 }
