@@ -1,26 +1,21 @@
 # Learning memory in reduced models
 
-A model of a molecule need not track every surrounding atom. But the variables it leaves out can continue to influence its motion. This influence can appear as memory: the future depends on more than the present state. Learning that memory could make small models more faithful to the physical systems they describe.[^sanderse-2024]
+A simulation of a protein cannot afford to follow every water molecule around it. A reduced model keeps a few variables and drops the rest. But the dropped variables do not stop acting: they push back on the retained ones with a delay, so that the future depends on the past and not only on the present. Getting this memory right is what makes a cheap model faithful.[^sanderse-2024]
 
-In a simple generalized Langevin model, a retained velocity $v(t)$ obeys
+The simplest setting is the generalized Langevin equation. A retained velocity $v(t)$ obeys
 
 $$
-\dot v(t) = -\int_0^t K(t-s)v(s)\,ds + \eta(t).
+\dot v(t) = -\int_0^t K(t-s)v(s)\,ds + \eta(t),
 $$
 
-Here $K$ is the memory kernel and $\eta$ is a random force representing unresolved motion; mass is set to one and external forces are omitted. The kernel describes how strongly earlier motion matters. We would like to recover it from observed trajectories.
+where the kernel $K$ records how strongly past motion acts now, and $\eta$ is the random force exerted by everything left out; mass is set to one and external forces are omitted. The kernel is rarely known. It has to be learned from trajectories.
 
-Lang and Lu give a starting point: a method for learning scalar kernels, with stability estimates under smoothness, decay, and spectral assumptions. Their bounds depend on how accurately correlation functions and their derivatives are estimated.[^lang-lu-learning] Later work connects kernel error to prediction error for models with additive white noise, under further stability conditions.[^lang-lu-error]
+Lang and Lu learn scalar kernels from estimated correlation functions, with stability estimates under smoothness, decay and spectral assumptions.[^lang-lu-learning] Later work bounds the prediction error caused by an error in the kernel, for additive white noise.[^lang-lu-error] Two questions lie just beyond these results:
 
-Several directions seem worth exploring:
+- **[What can limited data reveal?](https://github.com/kunstkabinett/memory-in-reduced-models/issues/1)** From short, noisy or sparsely sampled trajectories, which features of a kernel can be recovered, and when do two different kernels become indistinguishable?
+- **[Can memory and noise be learned together?](https://github.com/kunstkabinett/memory-in-reduced-models/issues/3)** In a thermal system the kernel and the random force are tied by the fluctuation–dissipation relation. Which guarantees survive when approximating the kernel also changes the noise?
 
-- What can short, noisy observations tell us about memory?
-- How much long-time memory can a small model safely forget?
-- How can learned memory and random forcing remain physically consistent?
-
-These are starting questions, not claims of novelty. A useful first step is to revisit a simple example with known memory and see what changes when observations become sparse. An explanation of failure could be as useful as a better reconstruction.
-
-See the [questions](https://github.com/kunstkabinett/memory-in-reduced-models/issues?q=is%3Aissue+label%3Aquestion), [reading notes](writeups/reading-notes.md), and [contribution guide](https://kunstkabinett.github.io/docs.html).
+A good first contribution takes a simple example with known memory and follows what is lost as the data thin out. A clear account of a failure is worth as much as a better reconstruction. The [reading notes](writeups/reading-notes.md) say what each source proves.
 
 [^sanderse-2024]: Benjamin Sanderse, Panos Stinis, Romit Maulik, and Shady E. Ahmed, *Scientific machine learning for closure models in multiscale problems: a review* (2024), research survey preprint [arXiv:2403.02913v2](https://arxiv.org/abs/2403.02913v2), §7.
 [^lang-lu-learning]: Quanjun Lang and Jianfeng Lu, *Learning Memory Kernels in Generalized Langevin Equations* (2026), SIAM Journal on Mathematics of Data Science 8(1), 141–166, [doi:10.1137/24M1651101](https://doi.org/10.1137/24M1651101). Open manuscript: [arXiv:2402.11705v3](https://arxiv.org/abs/2402.11705v3) (2025), §§2–6 and Appendix A; section references refer to this version.
