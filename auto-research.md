@@ -4,13 +4,13 @@ Contribute one useful, independently reviewable result toward the question in [a
 
 ## Scope and starting points
 
-Use the [question issues](https://github.com/public-observatory/memory-in-reduced-models/issues?q=is%3Aissue+label%3Aquestion) and [reading notes](writeups/reading-notes.md). The questions are deliberately exploratory. Choose and state a narrow subproblem before doing research, and check whether the literature already answers it.
+Use the [question issues](https://github.com/kunstkabinett/memory-in-reduced-models/issues?q=is%3Aissue+label%3Aquestion) and [reading notes](writeups/reading-notes.md). The questions are deliberately exploratory. Choose and state a narrow subproblem before doing research, and check whether the literature already answers it.
 
 ## Suggested research tracks
 
-- `observations` ([question #1](https://github.com/public-observatory/memory-in-reduced-models/issues/1)): investigate what limited data reveal about a known scalar kernel. A reproducible ambiguity or recovery example is useful progress.
-- `compression` ([question #2](https://github.com/public-observatory/memory-in-reduced-models/issues/2)): explore how forgetting or compressing memory changes one chosen observable. Compare with an uncompressed baseline and check existing perturbation results.
-- `consistency` ([question #3](https://github.com/public-observatory/memory-in-reduced-models/issues/3)): investigate memory and noise together in a simple thermal model. An explicit construction, obstruction, or careful account of existing guarantees is useful progress.
+- `observations` ([question #1](https://github.com/kunstkabinett/memory-in-reduced-models/issues/1)): investigate what limited data reveal about a known scalar kernel. A reproducible ambiguity or recovery example is useful progress.
+- `compression` ([question #2](https://github.com/kunstkabinett/memory-in-reduced-models/issues/2)): explore how forgetting or compressing memory changes one chosen observable. Compare with an uncompressed baseline and check existing perturbation results.
+- `consistency` ([question #3](https://github.com/kunstkabinett/memory-in-reduced-models/issues/3)): investigate memory and noise together in a simple thermal model. An explicit construction, obstruction, or careful account of existing guarantees is useful progress.
 
 Use the operator's resource budget; this agenda authorizes no unattended compute. State assumptions and distinguish reproduction, new evidence, and conjecture. A failed approach should record what it actually rules out.
 
@@ -28,4 +28,4 @@ Store the attempt under `auto-research/<track>/<YYYY-MM-DD>-<handle>-<slug>/`, f
 
 When the operator authorizes submission, submit one focused pull request and record the finding through the repository's **Claim** issue form. Otherwise leave the artifacts and draft claim locally. In **Answers**, name the question issues addressed; in **Evidence**, link the pull request and result; in **Provenance**, credit prior work and disclose the agent, model and tools used, with cost or compute usage when available. Link the claim from the attempt's README. If submission access is unavailable, leave a patch and draft claim locally and report that they were not submitted.
 
-A completed run is not a verified result. Leave question closure and acceptance to maintainers, and do not mark your own claim independently reproduced. Follow the [shared contribution guide](https://public-observatory.github.io/docs.html).
+A completed run is not a verified result. Leave question closure and acceptance to maintainers, and do not mark your own claim independently reproduced. Follow the [shared contribution guide](https://kunstkabinett.github.io/docs.html).

@@ -20,7 +20,7 @@ Several directions seem worth exploring:
 
 These are starting questions, not claims of novelty. A useful first step is to revisit a simple example with known memory and see what changes when observations become sparse. An explanation of failure could be as useful as a better reconstruction.
 
-See the [questions](https://github.com/public-observatory/memory-in-reduced-models/issues?q=is%3Aissue+label%3Aquestion), [reading notes](writeups/reading-notes.md), and [contribution guide](https://public-observatory.github.io/docs.html).
+See the [questions](https://github.com/kunstkabinett/memory-in-reduced-models/issues?q=is%3Aissue+label%3Aquestion), [reading notes](writeups/reading-notes.md), and [contribution guide](https://kunstkabinett.github.io/docs.html).
 
 [^sanderse-2024]: Benjamin Sanderse, Panos Stinis, Romit Maulik, and Shady E. Ahmed, *Scientific machine learning for closure models in multiscale problems: a review* (2024), research survey preprint [arXiv:2403.02913v2](https://arxiv.org/abs/2403.02913v2), §7.
 [^lang-lu-learning]: Quanjun Lang and Jianfeng Lu, *Learning Memory Kernels in Generalized Langevin Equations* (2026), SIAM Journal on Mathematics of Data Science 8(1), 141–166, [doi:10.1137/24M1651101](https://doi.org/10.1137/24M1651101). Open manuscript: [arXiv:2402.11705v3](https://arxiv.org/abs/2402.11705v3) (2025), §§2–6 and Appendix A; section references refer to this version.

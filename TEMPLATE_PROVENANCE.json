@@ -1,22 +1,22 @@
 {
-  "template": "https://github.com/public-observatory/agenda-template",
+  "template": "https://github.com/kunstkabinett/agenda-template",
   "commit": "764b32996ea23e8516a707f411daa1221f467ffd",
   "adapted_at": "2026-10-17T15:51:58Z",
   "status": "published agenda",
-  "repository": "https://github.com/public-observatory/memory-in-reduced-models",
+  "repository": "https://github.com/kunstkabinett/memory-in-reduced-models",
   "published_at": "2026-10-17T15:56:35Z",
   "initial_questions": [
     {
       "title": "Memory from limited observations",
-      "url": "https://github.com/public-observatory/memory-in-reduced-models/issues/1"
+      "url": "https://github.com/kunstkabinett/memory-in-reduced-models/issues/1"
     },
     {
       "title": "How much memory matters?",
-      "url": "https://github.com/public-observatory/memory-in-reduced-models/issues/2"
+      "url": "https://github.com/kunstkabinett/memory-in-reduced-models/issues/2"
     },
     {
       "title": "Memory and noise together",
-      "url": "https://github.com/public-observatory/memory-in-reduced-models/issues/3"
+      "url": "https://github.com/kunstkabinett/memory-in-reduced-models/issues/3"
     }
   ]
 }
