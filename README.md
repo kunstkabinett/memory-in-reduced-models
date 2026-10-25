@@ -12,8 +12,8 @@ where the kernel $K$ records how strongly past motion acts now, and $\eta$ is th
 
 Lang and Lu learn scalar kernels from estimated correlation functions, with stability estimates under smoothness, decay and spectral assumptions.[^lang-lu-learning] Later work bounds the prediction error caused by an error in the kernel, for additive white noise.[^lang-lu-error] Two questions lie just beyond these results:
 
-- **[What can limited data reveal?](https://github.com/kunstkabinett/memory-in-reduced-models/issues/1)** From short, noisy or sparsely sampled trajectories, which features of a kernel can be recovered, and when do two different kernels become indistinguishable?
-- **[Can memory and noise be learned together?](https://github.com/kunstkabinett/memory-in-reduced-models/issues/3)** In a thermal system the kernel and the random force are tied by the fluctuation–dissipation relation. Which guarantees survive when approximating the kernel also changes the noise?
+- **[What can limited data reveal?](https://github.com/project-wk/memory-in-reduced-models/issues/1)** From short, noisy or sparsely sampled trajectories, which features of a kernel can be recovered, and when do two different kernels become indistinguishable?
+- **[Can memory and noise be learned together?](https://github.com/project-wk/memory-in-reduced-models/issues/3)** In a thermal system the kernel and the random force are tied by the fluctuation–dissipation relation. Which guarantees survive when approximating the kernel also changes the noise?
 
 A good first contribution takes a simple example with known memory and follows what is lost as the data thin out. A clear account of a failure is worth as much as a better reconstruction. The [reading notes](writeups/reading-notes.md) say what each source proves.
 
